@@ -1,7 +1,7 @@
-# This project is not maintained anymore
-Hey guys!  
-I'm really sorry, but I'm not going to support this add-on anymore.  
-<img src="https://cdn.frankerfacez.com/emoticon/213310/4" width="32">
+# Info
+It's fork from [hide-unwanted-streams-on-twitch](https://github.com/LinogeFly/hide-unwanted-streams-on-twitch).
+Trying to keep alive this extention.
+<img src="//static-cdn.jtvnw.net/emoticons/v1/88/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v1/88/1.0 1x, //static-cdn.jtvnw.net/emoticons/v1/88/2.0 2x" width="32">
 
 # About
 This solution is for blocking unwanted content on [twitch.tv](http://www.twitch.tv/), such as streams, games, videos etc. Currently, the following platforms are supported:
@@ -40,6 +40,8 @@ husot.tests.runAll()
 Failing tests will throw errors into console.
 
 # Version history
+- 1.3.29 Fixed CSS selectors after Twitch update. Moved thumbOverlay to top right corner.
+- Forked.
 - 1.3.28 Fixed an issue when channels blocking stopped working.
 - 1.3.27 Fixed CSS selectors after Twitch update.
 - 1.3.26 Added Firefox Quantum support for Userscript platform.
