@@ -141,16 +141,16 @@
 .husot-thumbOverlay {
     display: none;
     position: absolute;
-    top: auto !important;
-    right: auto !important;
-    bottom: 5px !important;
-    left: 5px !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    bottom: auto !important;
+    left: auto !important;
     color: #fff;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, .6);
     padding: 0 5px;
-    opacity: 0.75;
+    border-radius: 2px;
     font: 12px "Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 22px;
+    line-height: 18px;
     width: auto !important;
     min-height: auto !important;
 }

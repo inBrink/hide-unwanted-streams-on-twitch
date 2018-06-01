@@ -116,7 +116,7 @@ husot.thumbs.StreamThumbsManager.prototype = Object.create(husot.thumbs.ThumbsMa
 husot.thumbs.StreamThumbsManager.prototype.constructor = husot.thumbs.StreamThumbsManager;
 
 husot.thumbs.StreamThumbsManager.prototype.getDomListnerThumbSelector = function () {
-    return '[data-a-target="live-channel-card-title-link"]';
+    return '[data-test-selector="preview-card-titles__primary-link"]';
 }
 
 husot.thumbs.StreamThumbsManager.prototype._getContainerJQuery = function () {
@@ -157,13 +157,13 @@ husot.thumbs.StreamThumbsManager.prototype._getChannelName = function ($thumbCon
                 '^https?://([a-zA-Z]+\.)?twitch.tv/directory/all(/?|/.+)$'
             ],
             name: function () {
-                return $thumbContainer.find('[data-a-target="live-channel-card-title-link"]').attr('href').trimSlash();
+                return $thumbContainer.find('[data-test-selector="preview-card-titles__primary-link"]').attr('href').trimSlash();
             }
         },
         // Default (should be the last one)
         {
             name: function() {
-                return $thumbContainer.find('[data-a-target="live-channel-card-title-link"]').attr('href').trimSlash();
+                return $thumbContainer.find('[data-test-selector="preview-card-titles__primary-link"]').attr('href').trimSlash();
             }
         }
     ];
