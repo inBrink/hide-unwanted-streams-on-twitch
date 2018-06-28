@@ -15,3 +15,6 @@
 // @require      https://code.jquery.com/jquery-1.11.2.min.js
 // @require      https://www.promisejs.org/polyfills/promise-6.1.0.min.js
 // ==/UserScript==
+
+// jQuery init (for Greasemonkey)
+this.$ = this.jQuery = jQuery.noConflict(true);
