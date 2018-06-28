@@ -653,7 +653,7 @@ husot.thumbs.StreamThumbsManager.prototype._getGameName = function ($thumbContai
         throw Error(husot.exceptions.argumentNullOrEmpty('$thumbContainer'));
     }
 
-    var $game = $thumbContainer.find('[data-a-target="live-channel-card-game-link"]')
+    var $game = $thumbContainer.find('a[href*="/game/"]')
         .filter(function () {
             // Check that game thumbnail is hidden explicitly and not because an ancestor element is hidden
             return $(this).css('display') !== 'none';
@@ -663,7 +663,7 @@ husot.thumbs.StreamThumbsManager.prototype._getGameName = function ($thumbContai
         return '';
     }
 
-    return $game.attr('title').trim();
+    return $game.text().trim();
 }
 
 husot.thumbs.StreamThumbsManager.prototype._getChannelName = function ($thumbContainer) {
